@@ -83,6 +83,7 @@ if __name__ == "__main__":
 
     # Test for successful input of cli args and run app
     try:
+        # run greetings cli
         if args.command == "salve":
             if args.echo:
                 greetings = f"Moin {args.echo}!"
@@ -91,6 +92,7 @@ if __name__ == "__main__":
             else:
                 print("moin...")
 
+        # run fibonacci calculator
         if args.command == "fib":
             log.info("Calculating Fibonacci Series...")
 
