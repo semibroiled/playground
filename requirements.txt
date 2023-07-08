@@ -1,0 +1,7 @@
+click==8.1.4
+iniconfig==2.0.0
+logger==1.4
+logging==0.4.9.6
+packaging==23.1
+pluggy==1.2.0
+pytest==7.4.0

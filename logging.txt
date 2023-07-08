@@ -1,0 +1,12 @@
+Starting Application
+Starting Application
+Starting Application
+2023-07-08 02:00:31,636 - INFO - Starting Application
+2023-07-08 02:03:14,880 - INFO - Starting Application
+08/07/2023 02:07:32 - __main__ - INFO - Starting Application
+08/07/2023 02:07:37 - __main__ - INFO - Starting Application
+08/07/2023 02:08:16 - __main__ - INFO - Starting Application
+08/07/2023 02:16:51 - __main__ - INFO - User said y...
+Starting Application
+2023-07-08 02:18:39,007 - INFO - User said ...
+Starting Application
