@@ -8,3 +8,15 @@ Starting Application
 2023-07-08 02:59:37,082 - __main__ - INFO - User said yes...
 Starting Application
 2023-07-08 02:59:37,084 - __main__ - INFO - 1000 given as input for first positional argument
+2023-07-08 03:28:21,049 - __main__ - INFO - Starting Application
+2023-07-08 03:28:21,049 - __main__ - ERROR - {user_e} raised
+2023-07-08 03:36:11,182 - __main__ - INFO - Starting Application
+2023-07-08 03:36:11,183 - __main__ - INFO - Calculating Fibonacci Series...
+2023-07-08 03:36:11,183 - __main__ - INFO - 5000 given as input for first positional argument
+2023-07-08 03:36:35,230 - __main__ - INFO - Starting Application
+2023-07-08 03:36:35,230 - __main__ - ERROR - {user_e} raised
+2023-07-08 03:37:59,632 - __main__ - INFO - Starting Application
+2023-07-08 03:37:59,633 - __main__ - ERROR - {user_e} raised
+2023-07-08 03:44:57,526 - __main__ - INFO - Starting Application
+2023-07-08 03:45:44,251 - __main__ - INFO - Starting Application
+2023-07-08 03:45:44,251 - __main__ - INFO - Moin fam!

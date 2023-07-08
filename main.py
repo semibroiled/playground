@@ -35,23 +35,40 @@ log.setLevel(logging.DEBUG)
 
 # Setup CLI for calling application from Terminal
 
+# Create Parser Instance
 parser = argparse.ArgumentParser()
 
+# Create Subparsers for future functionality
+subparser = parser.add_subparsers(dest="command")
+
+# Subparser for fibonacci
+fibonacci_series = subparser.add_parser("fib")
+
+# Subparser Greetings
+salve_greet = subparser.add_parser("salve")
+
+
 # Make argument parameters
-parser.add_argument(
+# Greetings!
+salve_greet.add_argument(
+    "--echo", type=str, help="Type your name for a customized greeting"
+)
+
+# For Fibonacci
+fibonacci_series.add_argument(
     "--upto",
     type=int,
     required=True,
     help="Upto which number should the fibonacci sequence be calculated",
 )
 
-parser.add_argument(
+fibonacci_series.add_argument(
     "--first",
     type=int,
     help="Starting Term of your fibonacci Sequence",
 )
 
-parser.add_argument(
+fibonacci_series.add_argument(
     "--second",
     type=int,
     help="Next Term of your fibonacci Sequence after Starting Term",
@@ -61,29 +78,38 @@ args = parser.parse_args()
 
 
 if __name__ == "__main__":
+    # Starting run of application
     log.info(f"Starting Application")
 
-    # Test for successful input of cli args
+    # Test for successful input of cli args and run app
     try:
-        if args.upto:
-            log.info(f"{args.upto} given as input for first positional argument")
+        if args.command == "salve":
+            if args.echo:
+                greetings = f"Moin {args.echo}!"
+                print(greetings)
+                log.info(greetings)
+            else:
+                print("moin...")
 
-            end = args.upto
-            series = fibonacci(end)
+        if args.command == "fib":
+            log.info("Calculating Fibonacci Series...")
 
-            print(
-                f""" Your list of fibonacci numbers upto 
-            {end} are:\n {series}"""
-            )
-        else:
-            raise Exception("There is no required positional argument given")
-    except Exception as user_e:
-        print("Run again with proper arguments. Type -h for help")
-        log.error("{user_e} raised")
+            if args.upto:
+                log.info(f"{args.upto} given as input for first positional argument")
+
+                end = args.upto
+                series = fibonacci(end)
+
+                print(
+                    f""" Your list of fibonacci numbers upto 
+                {end} are:\n {series}"""
+                )
     except ValueError as ve:
         log.error(
             f"Value error. Check that your argument is the right type\
                   \n{ve}"
         )
+    except TypeError as te:
+        log.error(f"{te}")
     finally:
         pass
