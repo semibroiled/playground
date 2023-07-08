@@ -20,3 +20,6 @@ Starting Application
 2023-07-08 03:44:57,526 - __main__ - INFO - Starting Application
 2023-07-08 03:45:44,251 - __main__ - INFO - Starting Application
 2023-07-08 03:45:44,251 - __main__ - INFO - Moin fam!
+2023-07-08 03:52:05,003 - __main__ - INFO - Starting Application
+2023-07-08 03:52:05,004 - __main__ - INFO - Calculating Fibonacci Series...
+2023-07-08 03:52:05,004 - __main__ - INFO - 1000000 given as input for first positional argument
