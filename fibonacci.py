@@ -1,6 +1,7 @@
 """This module contains the functions needed to call the fibonacci sequence
 """
 import logging
+from functools import lru_cache
 from typing import List
 
 # Setup Module Level Logging for our Running Module
@@ -34,6 +35,7 @@ log.setLevel(logging.DEBUG)
 
 # Define fibonacci function
 # Define fibonacci numbers function
+@lru_cache(maxsize=10)
 def fibonacci(end: int, first: int = 0, second: int = 1) -> List[int]:
     """_summary_
     Return a list of fibonacci sequence upto a maximum number

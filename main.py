@@ -1,7 +1,5 @@
 import logging
 import argparse
-import sys
-import os
 from fibonacci import fibonacci
 
 # Setup Module Level Logging for our Running Application

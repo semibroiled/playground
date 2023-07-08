@@ -26,3 +26,9 @@ Starting Application
 2023-07-08 04:34:55,870 - __main__ - INFO - Starting Application
 2023-07-08 04:34:55,871 - __main__ - INFO - Calculating Fibonacci Series...
 2023-07-08 04:34:55,871 - __main__ - INFO - 15 given as input for first positional argument
+2023-07-08 04:41:30,051 - __main__ - INFO - Starting Application
+2023-07-08 04:41:30,051 - __main__ - INFO - Calculating Fibonacci Series...
+2023-07-08 04:41:30,051 - __main__ - INFO - 1000 given as input for first positional argument
+2023-07-08 04:41:39,509 - __main__ - INFO - Starting Application
+2023-07-08 04:41:39,510 - __main__ - INFO - Calculating Fibonacci Series...
+2023-07-08 04:41:39,510 - __main__ - INFO - 1000 given as input for first positional argument
