@@ -3,6 +3,7 @@
 import logging
 from functools import lru_cache
 from typing import List
+from perf_timer import run_time
 
 # Setup Module Level Logging for our Running Module
 
@@ -35,6 +36,7 @@ log.setLevel(logging.DEBUG)
 
 # Define fibonacci function
 # Define fibonacci numbers function
+# @run_time
 @lru_cache(maxsize=10)
 def fibonacci(end: int, first: int = 0, second: int = 1) -> List[int]:
     """_summary_
@@ -50,7 +52,7 @@ def fibonacci(end: int, first: int = 0, second: int = 1) -> List[int]:
     """
     # Alternatively:
     # lst = [first, second]
-
+    log.info(f"Passed argument is {end}")
     # Initialize list
     lst = []
     log.info(f"List is {lst} - initializing function")
@@ -69,8 +71,12 @@ def fibonacci(end: int, first: int = 0, second: int = 1) -> List[int]:
     # Nth number
     x_n = lambda a, b: a + b  # Consecutive nth number
 
-    while lst[-1] < end:
+    while lst[-1] <= end:
         lst.append(x_n(lst[-1], lst[-2]))
         log.info(f"List is {lst} - running function...")
+
+        if lst[-1] > end:
+            lst.pop(-1)
+            break
 
     return lst
